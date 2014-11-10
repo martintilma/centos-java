@@ -24,8 +24,8 @@ EXPOSE 8080
 CMD ["/usr/bin/java","-jar","/var/lib/jenkins/jenkins.war"]
 
 # install pluings
-RUN sleep 10
-RUN curl -X POST -d '<jenkins><install plugin="git@2.2.7" /></jenkins>' --header 'Content-Type: text/xml' http://localhost:8080
+# RUN sleep 10
+# RUN curl -X POST -d '<jenkins><install plugin="git@2.2.7" /></jenkins>' --header 'Content-Type: text/xml' http://localhost:8080
 
-RUN sleep 20
-RUN curl -X POST http://localhost:8080/safeRestart
+# RUN sleep 20
+# RUN curl -X POST http://localhost:8080/safeRestart
