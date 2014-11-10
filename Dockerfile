@@ -2,4 +2,4 @@ FROM centos:centos7
 
 MAINTAINER Martin Tilma
 
-CMD ["echo HelloWorld"]
+CMD ["/bin/echo HelloWorld"]
