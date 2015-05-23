@@ -13,4 +13,4 @@ RUN echo "6a8897b5d92e5850ef3458aa89a5e9d7 jdk-8u25-linux-x64.rpm" > MD5SUM
 RUN md5sum -c MD5SUM
 
 EXPOSE 8080
-CMD ["/usr/bin/java","-v"]
+CMD ["/usr/bin/java","-version"]
